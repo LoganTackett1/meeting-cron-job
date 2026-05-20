@@ -40,7 +40,6 @@ def main():
 
         try:
             data = response.json()
-            send_discord_message("testing", discord_webhook_url)
 
             for day in data.get("days", []):
                 date = day.get("date")
