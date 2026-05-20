@@ -43,7 +43,7 @@ def main():
 
             for day in data.get("days", []):
                 date = day.get("date")
-                available_times = day.get("available_times", [])
+                available_times = day.get("spots", [])
 
                 if len(available_times) > 0:
                     message = (
